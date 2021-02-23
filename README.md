@@ -53,6 +53,8 @@ scripts
 └── train_random_forest.py  # train a random forest classifier
 ```
 
+## Launching
+
 There are three ways to launch this project on CML:
 
 1. **From Prototype Catalog** - Navigate to the Prototype Catalog on a CML workspace, select the "MLflow Tracking" tile, click "Launch as Project", click "Configure Project"
@@ -124,7 +126,7 @@ You can start the MLflow UI manually inside a session with
 !mlflow ui --port $CDSW_READONLY_PORT
 ```
 
-The UI will be listed in the nine-dot menu in the upper right corner of the session interface.
+When launched from a session, the UI will be listed in the nine-dot menu in the upper right corner of the session interface.
 Clicking it will open a new browser tab with the UI.
 When launched in a session, the UI will block other uses of the session, and will be closed when the session closes.
 It's not recommended to run two simultaneous copies of the MLflow interface (i.e. both as an Application and inside a session).
