@@ -8,6 +8,7 @@ In particular MLflow's experiment tracking capabilities offer a low-friction way
 This repository demonstrates the use of MLflow tracking in a couple of simple machine learning model training scripts inside Cloudera Machine Learning (CML) and Cloudera Data Science Workbench (CDSW).
 (We will refer only to CML in the remainder of this README, but the code should function equally well in either CML or CDSW).
 The repository is intended as less a tutorial on MLflow, and more an example of running MLflow inside CML.
+The AMP does not cover the model registry, project, or deployment capabilities of MLflow.
 
 The rest of this README is structured as follows.
 
