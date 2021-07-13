@@ -13,22 +13,13 @@ environment_variables:
     prompt_user: false
 
 tasks:
-  - type: create_job
+  - type: run_session
     name: Install Dependencies
     entity_label: install_dependencies
     script: cml/install_dependencies.py
-    arguments: None
-    cpu: 1
-    memory: 2
-    short_summary: Create a job to install project dependencies.
-    environment:
-      TASK_TYPE: CREATE/RUN_JOB
     kernel: python3
-    
-  - type: run_job
-    entity_label: install_dependencies
-    short_summary: Run the install dependencies job.
-    long_summary: Run the install dependencies job.
+    memory: 2
+    cpu: 1
 
   - type: create_job
     name: Train KNeighbors
