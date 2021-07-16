@@ -12,6 +12,16 @@ environment_variables:
     description: "Allow Python to find scripts directory when run as CLI"
     prompt_user: false
 
+engine_images:
+  - image_name: engine
+    tags:
+      - 14
+
+runtimes:
+  - editor: Workbench
+    kernel: Python 3.6
+    edition: Standard
+
 tasks:
   - type: run_session
     name: Install Dependencies
