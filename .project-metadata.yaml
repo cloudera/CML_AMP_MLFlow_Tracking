@@ -11,6 +11,11 @@ environment_variables:
     default: "/home/cdsw"
     description: "Allow Python to find scripts directory when run as CLI"
     prompt_user: false
+  
+  MLFLOW_TRACKING_URI:
+    default: ""
+    description: "URI of the tracking server. Leave blank to run locally."
+    prompt_user: false
 
 engine_images:
   - image_name: engine
@@ -21,6 +26,7 @@ runtimes:
   - editor: Workbench
     kernel: Python 3.6
     edition: Standard
+    version: 2021.09
 
 tasks:
   - type: run_session
