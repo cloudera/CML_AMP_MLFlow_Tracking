@@ -11,6 +11,10 @@ environment_variables:
     default: "/home/cdsw"
     description: "Allow Python to find scripts directory when run as CLI"
     prompt_user: false
+  MLFLOW_TRACKING_URI:
+    default: ""
+    description: "URI of the tracking server. Leave blank to run locally."
+    prompt_user: false
 
 tasks:
   - type: create_job
